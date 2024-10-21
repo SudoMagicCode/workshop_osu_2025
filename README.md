@@ -1,1 +1,3 @@
-# workshop_osu_2025
+#TD Workshop OSU 2025
+##TD Details
+* Workshop TouchDesigner version - 2022.35320 | Download
