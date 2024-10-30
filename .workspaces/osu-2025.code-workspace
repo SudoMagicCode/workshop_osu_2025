@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "Sudo Widgets",
+            "path": "../",
+            "cwd": "${workspaceFolder}",
+        },
+    ],
+    "settings": {
+        "files.exclude": {
+            ".workspaces/": true,
+            ".gitignore": true,
+        },
+    }
+}
