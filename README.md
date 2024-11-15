@@ -6,9 +6,13 @@
 
 ---
 
-## From OSU
+## A little about SudoMagic and  this workshop
 
-placeholder - blurb from Alex O.
+SudoMagic will be hosting an artist talk, industry Q&A, and a three-day TouchDesigner intensive. TouchDesigner is a visual programming environment for creating everything from visual sketches to robust applications in the media and technology space. Over the course of three days, participants will walk away with: an understanding of working with the environment, creating realtime video effects, rendering 3D scenes, and building communication pipelines with other tools. This workshop will largely focus on techniques for live performance, data processing, and interactive applications.
+
+SudoMagic is a boutique software and design studio that partners with organizations to bring their creative and technical ideas to life. The team at SudoMagic has produced everything from branded activations to immersive experiences, from permanent installations to bespoke pipeline tools and resources. Their clients include Meta, T-Mobile, UCLA, and Derivative among others.
+
+In addition to commercial work, SudoMagic is an education and research focused studio. Most recently they collaborated with Derivative, makers of the TouchDesigner software, to help develop the official TouchDesigner Curriculum.
 
 ---
 
@@ -25,17 +29,26 @@ Download [TouchDesigner 099] – it’s very important to make sure your machine
 Get your TouchDesigner 099 License – you can register for a Derivative account here - [Derivative Registration], and that will make sure you can create a non-commercial license key. The non-commercial license is free, and we won’t need anything more than this for our workshop.
 
 ### RECOMMENDED
-A 3 Button mouse – You certainly can use a track pad while you’re working, but you’ll be much happier to have an actual mouse for working in Touch.
+**A 3 Button mouse** – You certainly can use a track pad while you’re working, but you’ll be much happier to have an actual mouse for working in Touch.
 Download and Install a text Editor – [Visual Studio Code] is a great place to start if you don't have one.
 
-Bring some Assets – You certainly don’t have to bring any extra assets, but it’s often nice to have more than just the stock images / videos handy.
+**Bring some Assets** – You certainly don’t have to bring any extra assets, but it’s often nice to have more than just the stock images / videos handy.
 
-Be ready to share your contact info – the best resources you’ll find at any workshop will be the other people in the room with you. If you’ve got some extra business cards make sure you bring a stack to share with the folks in our group.
+**Be ready to share your contact info** – the best resources you’ll find at any workshop will be the other people in the room with you. If you’ve got some extra business cards make sure you bring a stack to share with the folks in our group.
 
 ### BE INSPIRED
 Take a look at some of the projects featured on the [Derivative Blog] to see what people are making and doing with TouchDesigner.
 
 ## Workshop summary 
+
+Over the course of three days, participants will walk away with: 
+
+* an understanding of working with the environment
+* creating realtime video effects 
+* rendering 3D scenes 
+* building communication pipelines with other tools. 
+
+This workshop will largely focus on techniques for live performance, data processing, and interactive applications.
 
 ## Schedule
 
@@ -70,26 +83,24 @@ A brief overview here
 | 6:00 PM | Working with Depth Data Continued         |
 | 6:30 PM | Using Point Cloud Files                   |
 | 7:00 PM | Using Point Cloud Files Continued         |
-| 7:30 PM | Adding Custom Parameters                  |
+| 7:30 PM | Audio Reactivity                          |
 | 8:00 PM | Wrap                                      |
 
 ### Sunday
 A brief overview here
 
-| Time     | Topic                                                |
-| -------- | :--------------------------------------------------- |
-| 10:00 AM | Modularity Principles - COMPs and Clones             |
-| 10:30 AM | External Files and TouchDesigner modules - TOX Files |
-| 11:00 AM | Tracking Concepts and Techniques                     |
-| 11:30 AM | Audio Reactive Visuals                               |
-| 12:00 PM | Creative Exploration                                 |
-| 12:30 PM | Wrap                                                 |
-| 1:00 PM  | Creative Exploration Continued                       |
-| 1:30 PM  | Creative Exploration Continued                       |
-| 2:00 PM  | Creative Exploration Continued                       |
-| 2:30 PM  | Creative Exploration Continued                       |
-
----
+| Time     | Topic                                                        |
+| -------- | :----------------------------------------------------------- |
+| 10:00 AM | Modularity Principles - COMPs and Custom Pars                |
+| 10:30 AM | Communicating with other applications - OSC and other communication protocols |
+| 11:00 AM | Communicating with other applications - OSC and other communication protocols Continued |
+| 11:30 AM | External Files and TouchDesigner modules - TOX Files         |
+| 12:00 PM | Tool-Making and Creative                                     |
+| 12:30 PM | Wrap                                                         |
+| 1:00 PM  | Tool-Making and Creative Continued                           |
+| 1:30 PM  | Tool-Making and Creative Continued                           |
+| 2:00 PM  | Tool-Making and Creative Continued                           |
+| 2:30 PM  | Tool-Making and Creative Continued                           |
 
 # Workshop Day 1
 
