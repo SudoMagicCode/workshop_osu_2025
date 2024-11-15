@@ -42,43 +42,52 @@ Take a look at some of the projects featured on the [Derivative Blog] to see wha
 ### Friday 
 A brief overview here
 
-| Time    | Topic                                      |
-| ---     | :---                                       |
-| 1:00 PM | Intro, Context & Roundtable                |
-| 1:30 PM | Artist Talk - Matthew & Zoe from SudoMagic |
-| 2:00 PM | What is TouchDesigner |
-| 2:30 PM | Navigating the Environment |
-| 3:00 PM | Break |
-| 3:15 PM | Operator Families |
-| 3:45 PM | Live Camera Video FX |
-| 4:15 PM | Realtime Rendering |
-| 4:45 PM | Custom Parameters |
-| 5:15 PM | Working with Multiple Screens & Setting up Outputs |
-| 6:00 PM | Wrap |
+| Time    | Topic                                           |
+| ------- | :---------------------------------------------- |
+| 3:00 PM | Intro, Context & Roundtable                     |
+| 3:30 PM | Artist Talk & QA - Matthew & Zoe from SudoMagic |
+| 4:00 PM | What is TouchDesigner                           |
+| 4:30 PM | Navigating the Environment                      |
+| 5:00 PM | Break                                           |
+| 5:30 PM | Operator Families                               |
+| 6:00 PM | Live Camera Video FX                            |
+| 6:30 PM | Live Camera Video FX Continued                  |
+| 7:00 PM | Realtime Rendering                              |
+| 7:30 PM | Realtime Rendering Continued                    |
+| 8:00 PM | Wrap                                            |
 
 ### Saturday 
 A brief overview here
 
-| Time    | Topic                           |
-| ---     | :---                            |
-| 1:00 PM | Intro, Context & Roundtable     |
-| 2:00 PM | Operator Families               |
-| 3:00:PM | Break                           |
-| 4:00:PM | Break                           |
-| 5:00:PM | Break                           |
-| 6:00 PM | Wrap                            |
+| Time    | Topic                                     |
+| ------- | :---------------------------------------- |
+| 3:00 PM | Intro to Instancing                       |
+| 3:30 PM | Data Driven Instances                     |
+| 4:00 PM | Visualizing Motion Capture Data           |
+| 4:30 PM | Visualizing Motion Capture Data Continued |
+| 5:00 PM | Break                                     |
+| 5:30 PM | Working with Depth Data                   |
+| 6:00 PM | Working with Depth Data Continued         |
+| 6:30 PM | Using Point Cloud Files                   |
+| 7:00 PM | Using Point Cloud Files Continued         |
+| 7:30 PM | Adding Custom Parameters                  |
+| 8:00 PM | Wrap                                      |
 
 ### Sunday
 A brief overview here
 
-| Time    | Topic                           |
-| ---     | :---                            |
-| 1:00:PM | I/O with TouchOSC               |
-| 2:00 PM | Instancing & Point Clouds       |
-| 3:00 PM | 10 Minute Break                 |
-| 3:15 PM | Audio Reactive Visuals          |
-| 4:00 PM | Pressure Project                |
-| 5:00 PM | Wrap                            |
+| Time     | Topic                                                |
+| -------- | :--------------------------------------------------- |
+| 10:00 AM | Modularity Principles - COMPs and Clones             |
+| 10:30 AM | External Files and TouchDesigner modules - TOX Files |
+| 11:00 AM | Tracking Concepts and Techniques                     |
+| 11:30 AM | Audio Reactive Visuals                               |
+| 12:00 PM | Creative Exploration                                 |
+| 12:30 PM | Wrap                                                 |
+| 1:00 PM  | Creative Exploration Continued                       |
+| 1:30 PM  | Creative Exploration Continued                       |
+| 2:00 PM  | Creative Exploration Continued                       |
+| 2:30 PM  | Creative Exploration Continued                       |
 
 ---
 
