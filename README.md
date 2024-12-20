@@ -1,4 +1,5 @@
 # TD Workshop OSU 2025
+
 ## TD Details
 
 * Workshop TouchDesigner version - 2022.35320
@@ -21,6 +22,7 @@ In addition to commercial work, SudoMagic is an education and research focused s
 Before we begin, there are a few important things to keep in mind that will make the workshop run smoothly, and ensure you can focus on getting the most out of our time together. Below you’ll find a list of required first steps / tools to have with you, and some recommended steps to help you prepare.
 
 ### REQUIRED
+
 Bring you Laptop – Mac or PC. Make sure you review the [System Requirements] from Derivative so you know you have a machine that’s TouchDesigner ready.
 Don’t forget your power adapter – TouchDesigner is largely a GPU based environment. This makes for fast operations, but often means that your battery will get consumed quickly. You’ll definitely want your adapter, even if it’s a pain to lug around.
 
@@ -29,6 +31,7 @@ Download [TouchDesigner 099] – it’s very important to make sure your machine
 Get your TouchDesigner 099 License – you can register for a Derivative account here - [Derivative Registration], and that will make sure you can create a non-commercial license key. The non-commercial license is free, and we won’t need anything more than this for our workshop.
 
 ### RECOMMENDED
+
 **A 3 Button mouse** – You certainly can use a track pad while you’re working, but you’ll be much happier to have an actual mouse for working in Touch.
 Download and Install a text Editor – [Visual Studio Code] is a great place to start if you don't have one.
 
@@ -37,39 +40,40 @@ Download and Install a text Editor – [Visual Studio Code] is a great place to 
 **Be ready to share your contact info** – the best resources you’ll find at any workshop will be the other people in the room with you. If you’ve got some extra business cards make sure you bring a stack to share with the folks in our group.
 
 ### BE INSPIRED
+
 Take a look at some of the projects featured on the [Derivative Blog] to see what people are making and doing with TouchDesigner.
 
-## Workshop summary 
+## Workshop summary
 
-Over the course of three days, participants will walk away with: 
+Over the course of three days, participants will walk away with:
 
 * an understanding of working with the environment
-* creating realtime video effects 
-* rendering 3D scenes 
-* building communication pipelines with other tools. 
+* creating realtime video effects
+* rendering 3D scenes
+* building communication pipelines with other tools.
 
 This workshop will largely focus on techniques for live performance, data processing, and interactive applications.
 
 ## Schedule
 
-### Friday 
+### Friday
+
 A brief overview here
 
 | Time    | Topic                                           |
 | ------- | :---------------------------------------------- |
-| 3:00 PM | Intro, Context & Roundtable                     |
+| 3:00 PM | Intro, Context & Routable                       |
 | 3:30 PM | Artist Talk & QA - Matthew & Zoe from SudoMagic |
 | 4:00 PM | What is TouchDesigner                           |
 | 4:30 PM | Navigating the Environment                      |
 | 5:00 PM | Break                                           |
 | 5:30 PM | Operator Families                               |
 | 6:00 PM | Live Camera Video FX                            |
-| 6:30 PM | Live Camera Video FX Continued                  |
 | 7:00 PM | Realtime Rendering                              |
-| 7:30 PM | Realtime Rendering Continued                    |
 | 8:00 PM | Wrap                                            |
 
-### Saturday 
+### Saturday
+
 A brief overview here
 
 | Time    | Topic                                     |
@@ -77,41 +81,29 @@ A brief overview here
 | 3:00 PM | Intro to Instancing                       |
 | 3:30 PM | Data Driven Instances                     |
 | 4:00 PM | Visualizing Motion Capture Data           |
-| 4:30 PM | Visualizing Motion Capture Data Continued |
 | 5:00 PM | Break                                     |
 | 5:30 PM | Working with Depth Data                   |
-| 6:00 PM | Working with Depth Data Continued         |
 | 6:30 PM | Using Point Cloud Files                   |
-| 7:00 PM | Using Point Cloud Files Continued         |
 | 7:30 PM | Audio Reactivity                          |
 | 8:00 PM | Wrap                                      |
 
 ### Sunday
+
 A brief overview here
 
 | Time     | Topic                                                        |
 | -------- | :----------------------------------------------------------- |
-| 10:00 AM | Modularity Principles - COMPs and Custom Pars                |
-| 10:30 AM | Communicating with other applications - OSC and other communication protocols |
-| 11:00 AM | Communicating with other applications - OSC and other communication protocols Continued |
-| 11:30 AM | External Files and TouchDesigner modules - TOX Files         |
-| 12:00 PM | Tool-Making and Creative                                     |
-| 12:30 PM | Wrap                                                         |
-| 1:00 PM  | Tool-Making and Creative Continued                           |
-| 1:30 PM  | Tool-Making and Creative Continued                           |
-| 2:00 PM  | Tool-Making and Creative Continued                           |
-| 2:30 PM  | Tool-Making and Creative Continued                           |
+| 10:00 AM | Communicating with other applications - OSC and other communication protocols                 |
+| 10:30 AM | Open Hack-a-thon / Coding Circle - small group or individual creative work hours with Zoe & Matt |
+| 12:30 PM | Break                                                         |
+| 1:00 PM  | Faculty / Staff Collaborative working session w/ Zoe & Matt                           |
+| 3:00 PM  |Wrap                           |
 
 # Workshop Day 1
 
-On our first day we'll focus on the basics. We'll start with a quick round of introductions and then dive into working with TouchDesigner. We'll start by looking at the user interface, and learning about the different operator families. We'll then get started right away by setting up a render network, and working with post processing effects. There are lots of ways we can manipulate video in TouchDesigner, and getting a firm handle on what image manipulation looks like will set us up for working with camera effects in the late afternoon. We'll warp the day by looking at creating custom parameters and outputting our content to another window or another screen. 
+On our first day we'll focus on the basics. We'll start with a quick round of introductions and then dive into working with TouchDesigner. We'll start by looking at the user interface, and learning about the different operator families. We'll then get started right away by setting up a render network, and working with post processing effects. There are lots of ways we can manipulate video in TouchDesigner, and getting a firm handle on what image manipulation looks like will set us up for working with camera effects in the late afternoon. We'll warp the day by looking at creating custom parameters and outputting our content to another window or another screen.
 
 During the workshop we'll create everything together so you have the hands on experience of building networks yourself. While that's great for working in the moment, sometimes you want (or need) an extra reference. The workshop repo also contains a file that's the end of day file - this contains all of the exercises we've gone over together in the workshop. This can be helpful as a reference, but also if you get stuck and need to compare you work to an example.
-
-## Prep
-
-On Day 2 we'll be using [TouchOSC]. Make sure you download and install this application before tomorrow - we'll only be working locally, so you only need to install it on your laptop. While there is a paid version of this app, we will only be using the features in the free version for the workshop.
-
 
 ![image](readme-assets/day1/env-nav-01.png)
 
@@ -121,8 +113,13 @@ The first time you open any new application it can be frustrating or confusing a
 
 Learn more at [Navigating the TouchDesigner Environment](https://learn.derivative.ca/courses/100-fundamentals/lessons/101-navigating-the-environment/)
 
-## Operator Families
 
+
+
+## Navigating the Environment
+Some additional content here
+
+## Operator Families
 
 ![image](readme-assets/day1/op-families-01.png)
 
@@ -192,11 +189,40 @@ We’ll also look at how we can output the image and video contents of our netwo
 
 An overview of what we'll cover on Day 2
 
+
+## Intro to Instancing
+Summary here
+
+## Data Driven Instances
+Summary here
+
+## Visualizing Motion Capture Data
+Summary here
+
+## Working with Depth Data
+Summary here
+
+## Using Point Cloud Files
+Summary here
+
+## Audio Reactivity
+Summary here
+
 ---
 
 # Workshop Day 3
 
 An overview of what we'll cover on Day 2
+
+## Communicating with other applications - OSC and other communication protocols
+Summary here
+
+## pen Hack-a-thon / Coding Circle - small group or individual creative work hours with Zoe & Matt
+Summary here
+
+## Faculty / Staff Collaborative working session w/ Zoe & Matt
+Summary here
+
 
 ## I/O With Touch OSC
 
@@ -213,12 +239,11 @@ If you wanted to use a dedicated app instead of something web based you might co
 * [TouchOSC]
 * [OSC/PILOT](https://oscpilot.com/)
 
-Any of the solutions above will help you create an interface that's on a different screen or even a different computer than your TouchDesigner project's main output. For this workshop we're going to use [TouchOSC]. Full disclosure, there is both a free and paid version of this app - for this workshop we'll only be using features that are in the free version. The latest version of TouchOSC runs on Windows, macOS, Android, and iOS - which makes it easy to build an interface on your desktop and then share it to your mobile device. 
+Any of the solutions above will help you create an interface that's on a different screen or even a different computer than your TouchDesigner project's main output. For this workshop we're going to use [TouchOSC]. Full disclosure, there is both a free and paid version of this app - for this workshop we'll only be using features that are in the free version. The latest version of TouchOSC runs on Windows, macOS, Android, and iOS - which makes it easy to build an interface on your desktop and then share it to your mobile device.
 
 **Organize as you program**
 
 *While it can be temping to just drop another OSC in CHOP or DAT into your network wherever you need one, this is generally considered bad practice. Every operator you use has some computational overhead associated with it, so it's best to only add the operators you need. But how do you only work with one OSC in op? You use select ops. A select op can route the contents of an operator to anywhere in your network. To put this into practice, at the root of your project create a base called `base_com` or `base_io`. Put your OSC In operator in this network, and then use select Ops to pull it's contents anywhere you need them.*
-
 
 ### What is OSC?
 
@@ -232,12 +257,14 @@ When you're first getting started with instances it's easy to quickly feel like 
 
 ![image](readme-assets/day2/distruption-fields-01.png)
 
-Manipulating point clouds often means thinking about your points spatially. We'll explore how we can use some simple tricks with a bit of math to calculate distance, create bounding fields where we can manipulate our points, and how some of the secrets of the Point Transform TOP. 
+Manipulating point clouds often means thinking about your points spatially. We'll explore how we can use some simple tricks with a bit of math to calculate distance, create bounding fields where we can manipulate our points, and how some of the secrets of the Point Transform TOP.
 
 ![image](readme-assets/day2/distruption-fields-02.png)
 
 ### Reference TOE file
+
 In the reference `TOE` file you'll find examples on doing the following in TOPs:
+
 * computing distance
 * computing rotation
 * benefits of using square textures for point clouds
@@ -249,7 +276,7 @@ In the reference `TOE` file you'll find examples on doing the following in TOPs:
 
 ## Audio Reactive Visuals
 
-There are lots of ways to add interactive elements to your projects, and it's not uncommon to want to make your project react to audio. 
+There are lots of ways to add interactive elements to your projects, and it's not uncommon to want to make your project react to audio.
 
 ### Palette Tools | `audioAnalysis`
 
@@ -261,53 +288,23 @@ We’ll use the audioAnalysis COMP to build responsive and reactive behaviors th
 
 ### Alternatives to TouchDesigner Audio Analysis
 
-While it's often tempting to do everything you can in a single application, it can also be beneficial to break up the work across multiple applications. 
+While it's often tempting to do everything you can in a single application, it can also be beneficial to break up the work across multiple applications.
 
 #### TDAbleton
 
-Depending on the type of audio integration you're looking for you may consider [TDAbleton] for achieving some of the audio interactivity you're after. The TDAbleton package can make integration with your Ableton set much easier, especially if you're focused on audio first. 
+Depending on the type of audio integration you're looking for you may consider [TDAbleton] for achieving some of the audio interactivity you're after. The TDAbleton package can make integration with your Ableton set much easier, especially if you're focused on audio first.
 
 #### PD or MaxMSP
 
-Other node based programming environments that allow for signal processing include [MaxMSP] and [Pure Data]. Some artist / engineers preferer to do do their audio analysis in one of these applications and then send the results to TouchDesigner via OSC or UDP Messaging. This alternative can ensure that audio analysis is a separate concern and runs in another thread - which may help improve your application optimization. 
+Other node based programming environments that allow for signal processing include [MaxMSP] and [Pure Data]. Some artist / engineers preferer to do do their audio analysis in one of these applications and then send the results to TouchDesigner via OSC or UDP Messaging. This alternative can ensure that audio analysis is a separate concern and runs in another thread - which may help improve your application optimization.
 
 **Networking messaging**
 
 *If you're collaborating with another artist, it can often be beneficial to use network messages to synchronize your applications. For example, if one creator is focused on audio you can still receive messages over the network to control the visual elements you've created in TouchDesigner. The same techniques we've explored using OSC messages from a control surface can also be used when sending control messages from another computer or application.*
 
-## Pressure Project
-
-Pressure what now? 
-
-The intention of a pressure project is tackle a challenge or prompt in a short period of time. In this case the "pressure" in the project is only because it's intended to be a fast sketch as a way to explore and experiment - not something that needs to be polished or perfect. Our pressure project is going to combine the skills we've learned over the past two days - you're welcome to borrow any of the techniques we've explored or code we've written together. You're also encouraged to experiment and explore ideas that may have been percolating over the course of the workshop. Both of the instructors will be circulating during your worktime, so feel free to ask for help if you get stuck.
-
-**Code is only efficient or inefficient**  
-*As much as it'd be great if there was a single "right" way to solve a problem or achieve an outcome, programming is mostly about efficiency. There's not wrong way to solve a problem in TouchDesigner - it might be more efficient to use one technique over another, but it's important to explore and try different techniques. Don't be afraid to explore an idea just because it might slow down your computer.*
-
-### Prompt
-
-Using the techniques we've explored during the workshop, create a component that responds to the prompt:
-
-* *a love letter to a place you've never been before*  
-
-OR  
-
-* *a love letter to a place you can longer return to*
-
-Project requirements:
-
-* Encapsulated in a `base`
-* Use Custom Parameters
-* Use an `in` and `out` to move textures or other elements into your component
-
-### Time
-
-You'll have about 30 minutes to complete your pressure project. After 30 minutes you'll walk through the room to see what other participants have created.
-
 ## Packaging
 
 Unfortunately we can’t build complete EXEs with TouchDesigner, but we can build components to share called TOX files, and we can embed files in project file (our TOE). Here we’ll look at a few of the techniques you might use when packaging up your project file either to share or save as a TOX or to build a TOE file that holds all of the assets your project needs to move to another computer.
-
 
 ----
 

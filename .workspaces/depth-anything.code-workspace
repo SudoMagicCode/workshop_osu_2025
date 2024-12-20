@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "Depth-Anything",
+            "path": "../research/Depth-Anything-V2",
+            "cwd": "${workspaceFolder}/research/Depth-Anything-V2/",
+        },
+    ],
+    "settings": {
+        "files.exclude": {
+            ".workspaces/": true,
+            ".gitignore": true,
+        },
+    }
+}

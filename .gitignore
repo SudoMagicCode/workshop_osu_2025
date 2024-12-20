@@ -7,6 +7,9 @@ docs/node_modules
 # Production
 docs/build
 
+# Research
+research/*
+
 # Generated files
 docs/.docusaurus
 docs/.cache-loader
