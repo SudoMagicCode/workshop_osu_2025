@@ -24,3 +24,7 @@ docs/.cache-loader
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+code/assets/sensing/point-clouds/
+
+code/assets/sensing/kinect/
