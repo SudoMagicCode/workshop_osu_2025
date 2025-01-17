@@ -167,6 +167,8 @@ While it’s great to see how we connect operators of like families together, mo
 
 ## Live Camera Video FX
 
+![image](readme-assets/day1/live-camera-01.png)
+
 There's no shortage of things you can do with TouchDesigner, and one of the fun and exciting ways to get started learning TOPs is to build video FX networks and work with live cameras. In these examples we'll look at how we can approach several different techniques for working with video - both live footage and video files. We'll look at how simple transformations can create interesting effects with only a few nodes in our network. We'll also take a closer look at the mechanics of working with texture operators, and how you can take build your own reusable effects.
 
 ## Realtime Rendering
@@ -179,134 +181,56 @@ There are lots of ways we might use real time rendering in TouchDesigner - from 
 
 Learn more at [TouchDesigner Basic Render Setup](https://learn.derivative.ca/courses/100-fundamentals/lessons/104-sops-rendering-3d-scenes/topic/basic-render-setup/)
 
-## Custom Pars & Outputs
-
-Custom parameters are an essential part of the modern TouchDesigner workflow. This feature makes it easy for us to create custom components that have their own controls without needing to build complete UIs. They also allow for a streamlined approach to creating sharable and reusable elements inside of TouchDesigner. In this section we’ll look at how to get started with using custom components.
-
-We’ll also look at how we can output the image and video contents of our network to Window COMP. This is how we can display content on another screen, projector, or other output device.
-
 ---
 
 # Workshop Day 2
 
-An overview of what we'll cover on Day 2
+Day 2 is our opportunity to start working with data and to do some more interesting rendering. Building from Day 1, we'll start with a look at how we can work with lots of geometry. Particles, point clouds, and all sorts of data sets often produce lots of data points for us to display on screen, and we'll take some time to ensure that we understand the concepts that drive this type of rendering. We'll also take a closer look at working with different data inputs. From motion capture data to point clouds we'll examine how we can transform data into elements we can visualize on screen, and how to use that information to create events. We'll round out the day with an exploration of audio reactivity and how to start building responsive systems in TouchDesigner.
 
 
 ## Intro to Instancing
-Summary here
+![image](readme-assets/day2/instancing-01.png)
+
+Briefly, instancing is the idea that we want to reuse a piece of geometry multiple times in different positions. This is generally cheaper as our GPU can do all of the work of placing copies of our geometry rather than generating new geometry (like the copy SOP). To do this we use the instancing tab on the Geometry COMP, and we need to specify the location of each of our copies of geometry.
+
+CHOPs, TOPs, SOPs, and DATs can all be used for instancing. Here we see a brief example of each type of instancing. You can also mix and match instance sources - though you need to ensure that each source provides data for the same number of instances.
 
 ## Data Driven Instances
-Summary here
+![image](readme-assets/day2/data-driven-instances-01.png)
+
+There's lots of data that we interact with a on a regular basis, and here we'll look at how to load an external data set, process its contents, and then use the results to drive the content we're drawing on screen. In many cases the data manipulation steps we need to accomplish are done with Channel Operators, this portion of Day 2 will give us a chance to do a deep dive on some of the magic of CHOPs.
 
 ## Visualizing Motion Capture Data
-Summary here
+![image](readme-assets/day2/mocap-01.png)
+
+Motion capture data is increasingly present in interactive systems. From Machine Learning to large tracking systems, we often work with data that holds a presentation of positions that we want to use to draw elements on screen. Here we'll take a look at how to playback a captured motion file and how we can convert that data into something we can visualize. 
 
 ## Working with Depth Data
-Summary here
+![image](readme-assets/day2/depth-data-01.png)
+
+Depth data comes in many forms. For this portion of our workshop we'll start by looking at topographical data and how we can use this to drive displacement. We'll explore both computationally slow and fast mechanics for this style of operation and talk about the advantages of both techniques.
 
 ## Using Point Cloud Files
-Summary here
+![image](readme-assets/day2/point-clouds-01.png)
+
+Point clouds are everywhere. From Splats to Spatial scans there's an increasing amount of spatial data in our day to day lives. We'll start by looking at the format of point clouds and how we can manipulate the data inside of them. Time permitting we'll explore how we can start creating bound volumes in virtual space, and applying transformation effects to those bounded regions.
 
 ## Audio Reactivity
-Summary here
+![image](readme-assets/day2/audio-01.png)
+
+At the end of Day 3 we'll wrap with exploring audio reactivity. As we wrap the formal instruction for the workshop we'll combine all of the techniques we've explored as we start building our first responsive system.
 
 ---
 
 # Workshop Day 3
 
-An overview of what we'll cover on Day 2
+Day 3 is a chance to explore and create in a open lab setting - with a little help along the way in case you need it. The PatchLab @ ACCAD is focused on gathering to experiment, collaborate, and share with real-time performance software. The PatchLab is primarily for those that have previous TouchDesigner experience or have taken the workshop.
 
-## Communicating with other applications - OSC and other communication protocols
-Summary here
-
-## pen Hack-a-thon / Coding Circle - small group or individual creative work hours with Zoe & Matt
-Summary here
+## PatchLab |  creative work open collaboration
+During this block we'll have time and space for participants to start some open creative exploration. We'll be around to help answer questions, give you a nudge in a particular direction, or talk through an idea. Bring your creativity and enthusiasm for creating to share with others.
 
 ## Faculty / Staff Collaborative working session w/ Zoe & Matt
-Summary here
-
-
-## I/O With Touch OSC
-
-### Getting Started
-
-Building interfaces for your projects is no small feat and there are lots of ways to approach this challenge. While TouchDesigner itself has a built-in UI system it's often helpful to separate your UI schema from your project. You might create a web interface with something like tools like:
-
-* [Open Stage Control](http://openstagecontrol.ammd.net/)
-* [Node Red](https://nodered.org/)
-* [OSCAR](https://www.createwithoscar.com/)
-
-If you wanted to use a dedicated app instead of something web based you might consider:
-
-* [TouchOSC]
-* [OSC/PILOT](https://oscpilot.com/)
-
-Any of the solutions above will help you create an interface that's on a different screen or even a different computer than your TouchDesigner project's main output. For this workshop we're going to use [TouchOSC]. Full disclosure, there is both a free and paid version of this app - for this workshop we'll only be using features that are in the free version. The latest version of TouchOSC runs on Windows, macOS, Android, and iOS - which makes it easy to build an interface on your desktop and then share it to your mobile device.
-
-**Organize as you program**
-
-*While it can be temping to just drop another OSC in CHOP or DAT into your network wherever you need one, this is generally considered bad practice. Every operator you use has some computational overhead associated with it, so it's best to only add the operators you need. But how do you only work with one OSC in op? You use select ops. A select op can route the contents of an operator to anywhere in your network. To put this into practice, at the root of your project create a base called `base_com` or `base_io`. Put your OSC In operator in this network, and then use select Ops to pull it's contents anywhere you need them.*
-
-### What is OSC?
-
-> OpenSoundControl (OSC) is a data transport specification (an [encoding](https://opensoundcontrol.stanford.edu/encoding.html)) for realtime message communication among applications and hardware. OSC was developed by researchers [Matt Wright](https://ccrma.stanford.edu/matt-wright) and [Adrian Freed](http://www.adrianfreed.com/) during their time at the Center for New Music & Audio Technologies ([CNMAT](https://cnmat.berkeley.edu/)). OSC was originally designed as a highly accurate, low latency, lightweight, and flexible method of communication for use in realtime musical performance. They proposed OSC in 1997 as “[a new protocol for communication among computers, sound synthesizers, and other multimedia devices that is optimized for modern networking technology](https://opensoundcontrol.stanford.edu/publications/1997-Open-SoundControl-A-New-Protocol-for-Communicating-with-Sound-Synthesizers.html)”.
-
-learn more at the official page for  [OSC]
-
-## Instancing and Point Clouds
-
-When you're first getting started with instances it's easy to quickly feel like you've reached the limit of what you can create. As we start to explore some intermediate and advanced techniques for instancing there are more features of the `Geo COMP` we can use. We'll start by taking a closer look at how to work with many more instances by doing the computation for their movement in TOPs.
-
-![image](readme-assets/day2/distruption-fields-01.png)
-
-Manipulating point clouds often means thinking about your points spatially. We'll explore how we can use some simple tricks with a bit of math to calculate distance, create bounding fields where we can manipulate our points, and how some of the secrets of the Point Transform TOP.
-
-![image](readme-assets/day2/distruption-fields-02.png)
-
-### Reference TOE file
-
-In the reference `TOE` file you'll find examples on doing the following in TOPs:
-
-* computing distance
-* computing rotation
-* benefits of using square textures for point clouds
-* converting lat long coords to xyz coords
-* loading a point file in TOP with a CSV
-* SDF examples
-
-![image](readme-assets/day2/reference-toe-screenshot1.png)
-
-## Audio Reactive Visuals
-
-There are lots of ways to add interactive elements to your projects, and it's not uncommon to want to make your project react to audio.
-
-### Palette Tools | `audioAnalysis`
-
-While we certainly could create our own audio analysis tool in TouchDesigner, we can also take advantage of an existing component in the palette called [audioAnalysis]. The audioAnalysis COMP takes an audio feed as an input and outputs several channels we can use to control our networks.
-
-We’ll use the audioAnalysis COMP to build responsive and reactive behaviors that will animate our render network. We’ll build on what we learned on day 1 about rendering, and the techniques we’ve explored for using instances in our render networks.
-
-![image](readme-assets/day2/audio-reactivity-01.png)
-
-### Alternatives to TouchDesigner Audio Analysis
-
-While it's often tempting to do everything you can in a single application, it can also be beneficial to break up the work across multiple applications.
-
-#### TDAbleton
-
-Depending on the type of audio integration you're looking for you may consider [TDAbleton] for achieving some of the audio interactivity you're after. The TDAbleton package can make integration with your Ableton set much easier, especially if you're focused on audio first.
-
-#### PD or MaxMSP
-
-Other node based programming environments that allow for signal processing include [MaxMSP] and [Pure Data]. Some artist / engineers preferer to do do their audio analysis in one of these applications and then send the results to TouchDesigner via OSC or UDP Messaging. This alternative can ensure that audio analysis is a separate concern and runs in another thread - which may help improve your application optimization.
-
-**Networking messaging**
-
-*If you're collaborating with another artist, it can often be beneficial to use network messages to synchronize your applications. For example, if one creator is focused on audio you can still receive messages over the network to control the visual elements you've created in TouchDesigner. The same techniques we've explored using OSC messages from a control surface can also be used when sending control messages from another computer or application.*
-
-## Packaging
-
-Unfortunately we can’t build complete EXEs with TouchDesigner, but we can build components to share called TOX files, and we can embed files in project file (our TOE). Here we’ll look at a few of the techniques you might use when packaging up your project file either to share or save as a TOX or to build a TOE file that holds all of the assets your project needs to move to another computer.
+We'll wrap Day 3 with some collaborative time for faculty and staff who want to explore specific ideas, projects, or prototypes with Zoe and Matt. We have a few ideas of things to talk about / showcase, but this is designed to be a space for participants to bring their specific needs and questions as our topics of focus.
 
 ----
 
